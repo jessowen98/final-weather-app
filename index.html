@@ -22,56 +22,78 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <div class="weather">
-          <form>
-            <div class="row">
-              <div class="col-9">
-                <input
-                  type="search"
-                  placeholder="Enter a city here"
-                  class="form-control search-input"
-                />
-              </div>
-              <div class="col-3 p-0">
-                <input
-                  type="submit"
-                  class="btn btn-primary w-100"
-                  value="GO!"
-                />
-              </div>
-            </div>
-          </form>
-          <div class="CurrentWeather">
-            <div class="row">
-              <div class="col-6">
-                <h1>Birmingham</h1>
-                <li>Wednesday 13:30</li>
-              </div>
-              <div class="col-6">
-                <div class="temperature-container">
-                  <img
-                    src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                    alt="sunny"
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="weather">
+            <form>
+              <div class="row">
+                <div class="col-9">
+                  <input
+                    type="search"
+                    placeholder="Enter a city here"
+                    class="form-control search-input"
                   />
-                  <div>
-                    <span class="temperature">12</span>
-                    <span class="unit">°C | °F</span>
+                </div>
+                <div class="col-3 p-0">
+                  <input
+                    type="submit"
+                    class="btn btn-primary w-100"
+                    value="GO!"
+                  />
+                </div>
+              </div>
+            </form>
+            <div class="CurrentWeather">
+              <div class="row">
+                <div class="col-6">
+                  <h1>Birmingham</h1>
+                  <li>Wednesday 13:30</li>
+                  <li>Clear sky 😎</li>
+                </div>
+                <div class="col-6">
+                  <div class="temperature-container">
+                    <div class="d-flex weather-temperature">
+                      <img
+                        src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                        alt="sunny"
+                        class="float-left"
+                      />
+                      <div class="float-left">
+                        <span class="temperature">12</span>
+                        <span class="unit">°C | °F</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  <div class="col-6">
+                    <div class="weather-facts">
+                    <ul>
+                      <li>
+                        Precipitation: 0%
+                      </li>
+                      <li>
+                        Humidity: 0%
+                      </li>
+                      <li>
+                        Wind: 2 km/h
+                      </li>
+                    </ul>
+                  </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <footer>
-            <small>
-              <a href="https://github.com/jessowen98/final-weather-app"
-                >Open-source</a
-              >
-              project coded by Jess Owen
-            </small>
-          </footer>
         </div>
       </div>
+      <footer>
+        <small>
+          <a href="https://github.com/jessowen98/final-weather-app"
+            >Open-source</a
+          >
+          project coded by Jess Owen
+        </small>
+      </footer>
     </div>
     <script src="src/index.js"></script>
   </body>
