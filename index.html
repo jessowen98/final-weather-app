@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width", initial-scale=1.0" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
@@ -18,6 +18,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <title>☀️ Weather</title>
   </head>
   <body>
@@ -46,9 +48,9 @@
             <div class="CurrentWeather">
               <div class="row">
                 <div class="col-6">
-                  <h1>Birmingham</h1>
+                  <h1 id="city">Birmingham</h1>
                   <li>Wednesday 13:30</li>
-                  <li>Clear sky 😎</li>
+                  <li id="description">Clear sky</li>
                 </div>
                 <div class="col-6">
                   <div class="temperature-container">
@@ -59,8 +61,8 @@
                         class="float-left"
                       />
                       <div class="float-left">
-                        <span class="temperature">12</span>
-                        <span class="unit">°C | °F</span>
+                        <span class="temperature" id="temp">12</span>
+                        <span class="unit">°C | <a href="£">°F</a></span>
                       </div>
                     </div>
                   </div>

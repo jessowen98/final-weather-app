@@ -9,10 +9,9 @@ h1 {
   font-weight: 700;
   font-size: 38px;
   line-height: 48px;
-  color: #333333;
+  color: #ffffff;
   padding-right: 30px;
   padding-top: 30px;
-  padding-bottom: 15px;
 }
 
 li {
@@ -21,6 +20,7 @@ li {
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
+  text-transform: capitalize;
 }
 .weather-app {
   padding: 40px;
