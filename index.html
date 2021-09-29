@@ -15,7 +15,94 @@
   </head>
   <body>
     <div class="container">
-      <h1>hello</h1>
+      <div class="weather">
+        <form>
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Enter a city here"
+                class="form-control search-input"
+              />
+            </div>
+            <div class="col-3 p-0">
+              <input type="submit" class="btn btn-primary w-100" value="GO!" />
+            </div>
+          </div>
+        </form>
+        <div class="CurrentWeather">
+          <div class="row">
+            <div class="col-6">
+              <h1>Birmingham</h1>
+              <li>Wednesday 13:30</li>
+            </div>
+            <div class="col-6">
+              <div class="temperature-container">
+                <img src="" alt="sunny" />
+                <div>
+                  <span class="temperature">12</span>
+                  <span class="unit">°C | °F</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="WeatherForecast">
+          <div class="col">
+            <div class="WeatherForecasePreview">
+              <div class="forecast-time">Wed</div>
+              <canvas width="38" height="38"></canvas>
+              <div class="forecast-temperature">
+                <span class="forecast-temperature">12°</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="WeatherForecasePreview">
+              <div class="forecast-time">Thurs</div>
+              <canvas width="38" height="38"></canvas>
+              <div class="forecast-temperature">
+                <span class="forecast-temperature">12°</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="WeatherForecasePreview">
+              <div class="forecast-time">Fri</div>
+              <canvas width="38" height="38"></canvas>
+              <div class="forecast-temperature">
+                <span class="forecast-temperature">12°</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="WeatherForecasePreview">
+              <div class="forecast-time">Sat</div>
+              <canvas width="38" height="38"></canvas>
+              <div class="forecast-temperature">
+                <span class="forecast-temperature">12°</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="WeatherForecasePreview">
+              <div class="forecast-time">Sun</div>
+              <canvas width="38" height="38"></canvas>
+              <div class="forecast-temperature">
+                <span class="forecast-temperature">12°</span>
+              </div>
+            </div>
+          </div>
+          <footer>
+            <small>
+              <a href="https://github.com/jessowen98/final-weather-app"
+                >Open-source</a
+              >
+              project coded by Jess Owen
+            </small>
+          </footer>
+        </div>
+      </div>
       <script src="src/index.js"></script>
     </div>
   </body>
