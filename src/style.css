@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  background: #8e2de2; /* fallback for old browsers */
+  background: #e2a92d; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
   background: linear-gradient(to right, #4a00e0, #8e2de2);
 }
@@ -59,7 +59,7 @@ li {
 .unit {
   position: relative;
   font-size: 16px;
-  top: -22px;
+  top: -60px;
 }
 
 .temperature-container {
@@ -76,28 +76,30 @@ li {
 
 footer {
   color: #ffffff;
+  font-weight: 700;
 }
 
 .weather-forecast {
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
-  color: #ffffff;
+  color: #000;
 }
-
 .weather-forecast-date {
+  font-size: 18px;
   font-weight: 600;
+  color: #ffffff;
   margin-bottom: 10px;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
   font-size: 16px;
-  opacity: 0.6;
+  color: #ffffff;
+  margin-top: 10px;
 }
-
-.weather-forecast:hover {
-  background-color: rgba(236, 251, 255, 0.612);
-  max-width: 60px;
-  border-radius: 5px;
-}
-
 .weather-forecast-temp-max {
   font-weight: 600;
-  color: #ffffff;
 }

@@ -22,6 +22,34 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+//display forecast
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+                      
+                      <div class="col-2">
+                      <div class="forecast-block">
+                        <div class=weather-forecast-date>
+                        ${day} </div>
+                        <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                        width="42"/>
+                        <div class=weather-forecast-temperatures>
+                          <span class=weather-forecast-temp-max>18°</span>
+                          <span class=weather-forecast-temperature-min>12°</span>
+                      </div>
+                    </div>
+                    </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 //live current weather and facts
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
@@ -83,3 +111,6 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+search("Birmingham");
+displayForecast();
