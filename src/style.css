@@ -77,3 +77,27 @@ li {
 footer {
   color: #ffffff;
 }
+
+.weather-forecast {
+  margin-top: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.weather-forecast-date {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.weather-forecast:hover {
+  background-color: rgba(236, 251, 255, 0.612);
+  max-width: 60px;
+  border-radius: 5px;
+}
+
+.weather-forecast-temp-max {
+  font-weight: 600;
+  color: #ffffff;
+}
