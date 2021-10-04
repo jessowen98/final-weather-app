@@ -49,12 +49,12 @@ function displayForecast(response) {
                             forecastDay.temp.min
                           )}° </span>
                       </div>
-                    </div>
+                    </div>`;
   });
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
-//live current weather and facts
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -76,6 +76,7 @@ function displayTemperature(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
+
 //search bar function
 function search(city) {
   let apiKey = "c1d63dbb464264ab961e588476c61e78";
@@ -117,4 +118,3 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Birmingham");
-displayForecast();
