@@ -80,22 +80,21 @@ footer {
 }
 
 .weather-forecast {
-  margin-top: 20px;
+  margin-top: 40px;
   text-align: center;
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 .weather-forecast-date {
   font-size: 18px;
   font-weight: 600;
   color: #ffffff;
-  margin-bottom: 10px;
 }
 
-.weather-forecast-temperature-min {
+.weather-forecast-temp-min {
   opacity: 0.5;
 }
 
-.weather-forecast-temperatures {
+.weather-forecast-temp {
   font-size: 16px;
   color: #ffffff;
   margin-top: 10px;
